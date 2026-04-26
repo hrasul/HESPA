@@ -1,0 +1,61 @@
+
+STREAM Benchmark Results: Sustained CPU Bandwidth
+
+Machine: Casa Huber CIP reference machine
+Buffer Size analysis: L1, L2, L3, and Main Memory
+
+Buffer Size (MB) | Version    | Trial | MLUP/s     | Bandwidth (GB/s)
+================================================================================
+     0 | serial     |     1 |    3594.56 |         57.5129
+     0 | serial     |     2 |    1676.56 |         26.8249
+     0 | serial     |     3 |    1244.23 |         19.9077
+     0 | parallel   |     1 |      30.02 |        0.480379
+     0 | parallel   |     2 |      45.73 |        0.731616
+     0 | parallel   |     3 |      58.98 |        0.943734
+     0 | serial     |     1 |    2006.36 |         32.1017
+     0 | serial     |     2 |    1117.34 |         17.8775
+     0 | serial     |     3 |    1121.72 |         17.9476
+     0 | parallel   |     1 |     469.25 |         7.50797
+     0 | parallel   |     2 |     426.59 |         6.82551
+     0 | parallel   |     3 |     379.60 |         6.07365
+     1 | serial     |     1 |     703.55 |         11.2569
+     1 | serial     |     2 |     804.76 |         12.8762
+     1 | serial     |     3 |     892.47 |         14.2796
+     1 | parallel   |     1 |    1220.32 |         19.5252
+     1 | parallel   |     2 |    1568.63 |         25.0981
+     1 | parallel   |     3 |    1477.24 |         23.6359
+     8 | serial     |     1 |     996.99 |         15.9519
+     8 | serial     |     2 |    2122.64 |         33.9622
+     8 | serial     |     3 |     785.81 |          12.573
+     8 | parallel   |     1 |    3021.19 |          48.339
+     8 | parallel   |     2 |    5367.21 |         85.8753
+     8 | parallel   |     3 |    8075.68 |         129.211
+    64 | serial     |     1 |    1687.02 |         26.9924
+    64 | serial     |     2 |    1687.07 |         26.9931
+    64 | serial     |     3 |    1655.59 |         26.4894
+    64 | parallel   |     1 |    2242.15 |         35.8744
+    64 | parallel   |     2 |    1932.02 |         30.9123
+    64 | parallel   |     3 |    1940.97 |         31.0555
+   128 | serial     |     1 |    1623.25 |         25.9719
+   128 | serial     |     2 |    1635.85 |         26.1736
+   128 | serial     |     3 |    1613.12 |           25.81
+   128 | parallel   |     1 |    2968.22 |         47.4916
+   128 | parallel   |     2 |    2955.00 |           47.28
+   128 | parallel   |     3 |    2962.46 |         47.3994
+   256 | serial     |     1 |    1611.00 |          25.776
+   256 | serial     |     2 |    1608.66 |         25.7385
+   256 | serial     |     3 |    1606.55 |         25.7049
+   256 | parallel   |     1 |    3079.69 |          49.275
+   256 | parallel   |     2 |    3096.83 |         49.5492
+   256 | parallel   |     3 |    3093.21 |         49.4914
+Summary Statistics (Average Bandwidth per Configuration)
+
+Buffer Size (MB) | Serial Avg (GB/s) | Parallel Avg (GB/s) | Speedup
+================================================================================
+     0 |      28.6954 GB/s |         3.7605 GB/s |     .13x
+     0 |      28.6954 GB/s |         3.7605 GB/s |     .13x
+     1 |      12.8042 GB/s |        22.7531 GB/s |    1.77x
+     8 |      20.8290 GB/s |        87.8084 GB/s |    4.21x
+    64 |      26.8250 GB/s |        32.6141 GB/s |    1.21x
+   128 |      25.9852 GB/s |        47.3903 GB/s |    1.82x
+   256 |      25.7398 GB/s |        49.4385 GB/s |    1.92x
